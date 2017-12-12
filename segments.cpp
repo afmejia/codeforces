@@ -9,29 +9,23 @@ int main()
   int n, x, k;
   cin >> n >> x >> k;
 
-  // Fill array with n values
-  vector<int> arr;
+  // Fill aay with n values
+  vector<int> a;
   int element;
   for (int i = 0; i < n; i++)
   {
     cin >> element;
-    arr.push_back(element);
+    a.push_back(element);
   }
 
   // Sort array
-  sort(arr.begin(), arr.end());
+  sort(a.begin(), a.end());
 
-  // Get all possible pairs
-  for (int i = 0; i < n, i++)
-    for (int j = 0; j < n; j++)
-    {
-
-    }
-
-  /*for (int i = 0; i < n; i++)
+  // For each left value get a good right value
+  for (int i = 0; i < n; i++)
   {
-    cout << "Debug arr[" << i << "] = " << arr[i] << endl;
-    arr.push_back(element);
-  }*/
+      // Get the max limit for each a[i]
+  }
+
   return 0;
 }
