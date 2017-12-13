@@ -4,6 +4,26 @@
 
 using namespace std;
 
+int findPair(vector<int> a, int x, int k)
+{
+  int sizeOfA = (int) a.size();
+  if (sizeOfA == 1)
+  {
+    int divisors = a[0] / x - (a[0] - 1) / x;
+    if (divisors == k)
+      // TODO
+      // Find the maximum value for good pairs
+  }
+}
+
+void slice(vector<int> vec)
+{
+  cout << "Sliced vector size: " << (int) vec.size() << endl;
+  for (int i = 0; i < (int) vec.size(); i++)
+    cout << vec[i] << " ";
+  cout << endl;
+}
+
 int main()
 {
   int n, x, k;
@@ -21,11 +41,18 @@ int main()
   // Sort array
   sort(a.begin(), a.end());
 
-  // For each left value get a good right value
-  for (int i = 0; i < n; i++)
+  // For each a[j] guess a good right side
+  for (int i = 0, maxRight; i < n; i++)
   {
-      // Get the max limit for each a[i]
+    maxRight = findPair(a, x, k);
   }
 
+  // Slicing vectors
+  /*cout << "Original vector size: " << (int) a.size() << endl;
+  for (int i = 0; i < (int) a.size(); i++)
+    cout << a[i] << " ";
+  cout << endl;
+  vector<int> newVec(a.begin() + 2, a.end());
+  slice(newVec);*/
   return 0;
 }
