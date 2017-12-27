@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int findPair(vector<int> a, int x, int k)
+int findPair(vector<int> a, int x, int k, int i, int j)
 {
   int sizeOfA = (int) a.size();
   if (sizeOfA == 1)
@@ -14,6 +14,7 @@ int findPair(vector<int> a, int x, int k)
       // TODO
       // Find the maximum value for good pairs
   }
+  return 0;
 }
 
 void slice(vector<int> vec)
@@ -44,15 +45,8 @@ int main()
   // For each a[j] guess a good right side
   for (int i = 0, maxRight; i < n; i++)
   {
-    maxRight = findPair(a, x, k, i, n);
+    maxRight = findPair(a, x, k);
   }
 
-  // Slicing vectors
-  /*cout << "Original vector size: " << (int) a.size() << endl;
-  for (int i = 0; i < (int) a.size(); i++)
-    cout << a[i] << " ";
-  cout << endl;
-  vector<int> newVec(a.begin() + 2, a.end());
-  slice(newVec);*/
   return 0;
 }
