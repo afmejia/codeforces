@@ -44,7 +44,7 @@ int main()
   // For each a[j] guess a good right side
   for (int i = 0, maxRight; i < n; i++)
   {
-    maxRight = findPair(a, x, k);
+    maxRight = findPair(a, x, k, i, n);
   }
 
   // Slicing vectors
