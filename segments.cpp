@@ -30,7 +30,7 @@ int main()
   int n, x, k;
   cin >> n >> x >> k;
 
-  // Fill aay with n values
+  // Fill array with n values
   vector<int> a;
   int element;
   for (int i = 0; i < n; i++)
@@ -43,10 +43,7 @@ int main()
   sort(a.begin(), a.end());
 
   // For each a[j] guess a good right side
-  for (int i = 0, maxRight; i < n; i++)
-  {
-    maxRight = findPair(a, x, k);
-  }
+
 
   return 0;
 }
